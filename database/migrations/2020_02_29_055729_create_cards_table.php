@@ -15,6 +15,10 @@ class CreateCardsTable extends Migration
     {
         Schema::create('cards', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->integer('user_id')->unsigned();
+            $table->integer('card_no');
+            $table->integer('cvv');
+            $table->date('expiry');
             $table->timestamps();
         });
     }
