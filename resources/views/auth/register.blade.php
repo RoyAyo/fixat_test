@@ -6,3 +6,5 @@
 	<input type="password" id="password-confirm" name="password_confirmation" value="{{ old('password_confirmation') }}"><hr>
 	<button>Submit</button>
 </form>
+
+<a href="{{ route('login') }}">Login</a>

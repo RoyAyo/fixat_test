@@ -15,8 +15,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/hello', function () {
-    return 'hello bro';
-});
+Route::get('/home', function () {
+    return view('home');
+})->name('home');
 
 Auth::routes();
